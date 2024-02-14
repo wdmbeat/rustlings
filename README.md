@@ -1,3 +1,9 @@
+## How to use specific ssh key to push repo
+
+```sh
+GIT_SSH_COMMAND="ssh -i ~/.ssh/for_danmei_rsa" git push --set-upstream origin zhaowei/dev
+```
+
 <div class="oranda-hide">
 
 # rustlings 🦀❤️
