@@ -1,3 +1,4 @@
+
 // hashmaps2.rs
 //
 // We're collecting different fruits to bake a delicious fruit cake. For this,
@@ -40,6 +41,8 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
         // TODO: Insert new fruits if they are not already present in the
         // basket. Note that you are not allowed to put any type of fruit that's
         // already present!
+        basket.entry(Fruit::Banana).or_insert(2);
+        basket.entry(Fruit::Pineapple).or_insert(4);
     }
 }
 
